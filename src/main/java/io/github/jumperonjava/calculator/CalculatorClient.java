@@ -44,12 +44,12 @@ public class CalculatorClient implements ClientModInitializer{
             });
             var result = expression.build().evaluate();
             if(result == (int)result)
-                sendChatMessage("Result: ",(String.valueOf((int) result)));
+                sendChatMessage("§#ffcc33Fmcz's Calculator§8 >> §rResult: ",(String.valueOf((int) result)));
             else
-                sendChatMessage("Result: ",result);
+                sendChatMessage("§#ffcc33Fmcz's Calculator§8 >> §rResult: ",result);
         }
         catch (Exception e){
-            sendChatMessage("Error while evaluating: ", e.getMessage());
+            sendChatMessage("§#ffcc33Fmcz's Calculator§8 >> §4Failed to evaluate.  Reason: ", e.getMessage());
         }
 
         return 0;
