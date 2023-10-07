@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "id": "calculator",
+  "version": "${version}",
+  "name": "Calculator",
+  "description": "",
+  "authors": [],
+  "contact": {
+    "repo": "https://github.com/JavaJumper/Calculator"
+  },
+  "license": "GPL-3.0",
+  "icon": "assets/calculator/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "io.github.jumperonjava.calculator.CalculatorClient"
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
